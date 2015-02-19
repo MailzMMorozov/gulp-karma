@@ -16,6 +16,10 @@ var karmaPlugin = function(options) {
   var stream;
   var files = [];
 
+  if (options.files) {
+      files = options.files;
+  }
+
   options = extend({
     action: 'run'
   }, options);
